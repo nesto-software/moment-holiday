@@ -4,13 +4,10 @@ node_js:
   - "node"
   - "lts/*"
 
-cache:
-  directories:
-    - "node_modules"
-
 stages:
   - lint
-  - compile-test
+  - test
+  - compile
   - name: deploy
     if: branch = master
 
@@ -23,6 +20,11 @@ jobs:
     - stage: lint
       name: tslint
       script: npm run lint
-    - stage: compile-test
+    - stage: test
       name: jest-unit-test
       script: npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+    - stage: compile
+      name: transpile-typescript-node
+      script: npm run compile
+      name: transpile-typescript-browser
+      script: npm run compile:browser
