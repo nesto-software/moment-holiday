@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - "node"
+  - "lts/*"
+
+cache:
+  directories:
+    - "node_modules"
+
+stages:
+  - lint
+  - compile-test
+  - name: deploy
+    if: branch = master
+
+install:
+  - npm ci
+  - npm run config:peers
+
+jobs:
+  include:
+    - stage: lint
+      name: tslint
+      script: npm run lint
+    - stage: compile-test
+      name: jest-unit-test
+      script: npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
