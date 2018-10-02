@@ -1,0 +1,18 @@
+export enum HolidayName {
+    NEUJAHR = "Neujahr",
+    HEILIGE_DREI_KOENIGE = "Heilige Drei Könige",
+    OSTERMONTAG = "Ostermontag",
+    STAATSFEIERTAG = "Staatsfeiertag",
+    CHRISTI_HIMMELFAHRT = "Christi Himmelfahrt",
+    PFINGSTMONTAG = "Pfingstmontag",
+    FRONLEICHNAM = "Fronleichnam",
+    MARIA_HIMMELFAHRT = "Mariä Himmelfahrt",
+    NATIONALFEIERTAG = "Nationalfeiertag",
+    ALLERHEILIGEN = "Allerheiligen",
+    MARIA_EMPFAENGNIS = "Mariä Empfängnis",
+    WEIHNACHTEN = "Weihnachten",
+    STEPHANSTAG = "Stephanstag",
+    HEILIGER_ABEND = "Heiliger Abend",
+    SILVESTER = "Silvester",
+    KARFREITAG = "Karfreitag",
+}

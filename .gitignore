@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+npm-debug.log
+node_modules
+dist/
+dist.browser/
+.npmrc
+coverage/
+typedocs/
+packages/dev/

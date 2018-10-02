@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "packages/*",
+    "packages/locales/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "message": "chore(release): publish",
+      "allowBranch": [
+        "master",
+        "dev"
+      ],
+      "conventionalCommits": true
+    }
+  },
+  "npmClient": "npm",
+  "version": "independent"
+}

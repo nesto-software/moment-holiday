@@ -1,0 +1,21 @@
+{
+  "name": "@nesto-software/moment-holiday-node-test",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Example project which demonstrates how to use moment-holiday with nodejs.",
+  "main": "index.js",
+  "dependencies": {
+    "@nesto-software/moment-holiday": "../../packages/api"
+  },
+  "peerDependencies": {
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "example": "ts-node src/index.ts"
+  },
+  "license": "ISC"
+}
