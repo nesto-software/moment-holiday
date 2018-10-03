@@ -6,7 +6,7 @@
 Check out the code and go into the moment-holiday directory:
 
 ```bash
-git clone https://gitlab.com/nesto-software/moment-holiday.git
+git clone https://github.com/nesto-software/moment-holiday.git
 cd moment-holiday
 ```
 
@@ -144,6 +144,6 @@ Sometimes it is necessary to close and reopen vscode again in order for all impo
 This issue was observed for local package imports that use symlinks.
 
 ## Submitting a PR
-If you want to report a bug or propose an enhancement, [please fill an issue](https://gitlab.com/nesto-software/moment-holiday/issues).
-If you want to add a locale package, please use the [skeleton provided in the repository](https://gitlab.com/nesto-software/moment-holiday/tree/master/examples/locale).
-If you want to do something else, you can [place a pull request directly](https://gitlab.com/nesto-software/moment-holiday/merge_requests) or [contact the maintainer](mailto:martin.loeper@nesto-software.de).
+If you want to report a bug or propose an enhancement, [please fill an issue](https://github.com/nesto-software/moment-holiday/issues).
+If you want to add a locale package, please use the [skeleton provided in the repository](https://github.com/nesto-software/moment-holiday/tree/master/examples/locale).
+If you want to do something else, you can [place a pull request directly](https://github.com/nesto-software/moment-holiday/pulls) or [contact the maintainer](mailto:martin.loeper@nesto-software.de).

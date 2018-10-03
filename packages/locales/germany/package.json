@@ -55,5 +55,5 @@
         "snyk:protect": "snyk protect",
         "snyk:test": "snyk test"
     },
-    "repository": "https://gitlab.com/nesto-software/moment-holiday/tree/master/packages/locales/germany"
+    "repository": "https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany"
 }

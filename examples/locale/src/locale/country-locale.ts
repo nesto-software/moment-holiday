@@ -5,7 +5,6 @@ import {
     Legislation,
     LegislationTag,
     RecurringDate,
-    TagMapping,
     TypeTag,
     TypeTagValue,
 } from "@nesto-software/moment-holiday-core";
@@ -24,10 +23,10 @@ export class YOUR_COUNTRYCountryLocale extends AbstractLocale {
             {
                 name: HolidayName.CHRISTMAS,                                // write all names in the HolidayName enum and export it via index.js
                 date: new RecurringDate(25, 11),                            // christmas is each year at December 25th
-                tags: new Map([
-                    [TypeTag.name, new TypeTag(TypeTagValue.PUBLIC)],            // tag public holidays
-                    [LegislationTag.name, new LegislationTag(this.someLaw)],     // whenever possible, add the legislation reference for public holidays
-                ] as TagMapping),                                           // you are free to add more tags and even create your own
+                tags: [
+                    new TypeTag(TypeTagValue.PUBLIC),            // tag public holidays
+                    new LegislationTag(this.someLaw),     // whenever possible, add the legislation reference for public holidays
+                ],                                           // you are free to add more tags and even create your own
             },
         ];
     }

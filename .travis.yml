@@ -23,6 +23,8 @@ jobs:
     - npm run compile:browser
   - stage: deploy
     name: deploy-everything
+    node_js:
+      - "8"
     script:
     - npm run compile
     - npm run compile:browser
@@ -31,6 +33,12 @@ jobs:
     - npm run typedoc:create
     after_success:
       - .travis/push.sh
+    deploy:
+      provider: pages
+      skip-cleanup: true
+      github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+      keep-history: true
+      local-dir: docs
 script:
 - npm run compile
 - npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

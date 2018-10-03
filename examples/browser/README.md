@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="MOMENT-HOLIDAY" width="400px" src="https://nesto-software.gitlab.io/moment-holiday/docs/assets/images/moment-holiday.png" />
+  <img alt="MOMENT-HOLIDAY" width="400px" src="https://nesto-software.github.io/moment-holiday/docs/assets/images/moment-holiday.png" />
 </p>
 
 # Browser Support
@@ -7,10 +7,10 @@ This is a simple repository which demonstrates how to use moment-holdiay in the 
 
 ## Installation
 
-1. Check out the code from the [monorepo](https://gitlab.com/nesto-software/moment-holiday)
+1. Check out the code from the [monorepo](https://github.com/nesto-software/moment-holiday)
 
 ```bash
-git clone https://gitlab.com/nesto-software/moment-holiday.git
+git clone https://github.com/nesto-software/moment-holiday.git
 cd moment-holiday
 ```
 

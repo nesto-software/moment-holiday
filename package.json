@@ -14,12 +14,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:nesto-software/moment-holiday.git"
+    "url": "git@github.com:nesto-software/moment-holiday.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/nesto-software/moment-holiday/issues"
+    "url": "https://github.com/nesto-software/moment-holiday/issues"
   },
-  "homepage": "https://gitlab.com/nesto-software/moment-holiday",
+  "homepage": "https://github.com/nesto-software/moment-holiday",
   "license": "MIT",
   "peerDependencies": {
     "moment": ">=2.0.0",
@@ -76,7 +76,7 @@
     "publish": "npm run compile && lerna publish",
     "typedoc:create": "typedoc --options typedoc.json .",
     "docsify:serve": "docsify serve ./docs",
-    "toc": "doctoc --gitlab README.md",
+    "toc": "doctoc --github README.md",
     "snyk:monitor": "snyk auth $SNYK_TOKEN && snyk monitor && lerna run snyk:monitor",
     "snyk:protect": "snyk protect",
     "snyk:test": "snyk test && lerna run snyk:test"

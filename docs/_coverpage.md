@@ -14,7 +14,7 @@
 - 📑 Database Support for Custom Holidays
 
 <div class="buttons">
-  <a href="https://gitlab.com/nesto-software/moment-holiday/" target="_blank"><span>GitLab</span></a>
+  <a href="https://github.com/nesto-software/moment-holiday" target="_blank"><span>GitHub</span></a>
   <a href="#/README"><span>Get Started</span></a>
 </div>
 
