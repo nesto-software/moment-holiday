@@ -37,13 +37,12 @@
         noData: 'No Results.'
       },
       alias: {
-        // TBD:
-        // '.*?/CHANGELOG': '',
-        // '.*?/CONTRIBUTING': ''
-        'https://github.com/nesto-software/moment-holiday/tree/typedoc/(.*)': 'https://github.com/nesto-software/moment-holiday/raw/typedoc/$1',
-        'browser.md': 'https://github.com/nesto-software/moment-holiday/raw/examples/browser/README.md',
-        'node.md': 'https://github.com/nesto-software/moment-holiday/raw/examples/node/README.md',
+        '/.*/typedoc/(.*)': 'https://github.com/nesto-software/moment-holiday/raw/typedoc/$1',
+        '/.*/browser.md': 'https://github.com/nesto-software/moment-holiday/raw/examples/browser/README.md',
+        '/.*/node.md': 'https://github.com/nesto-software/moment-holiday/raw/examples/node/README.md',
+        '.*?/CONTRIBUTING': 'https://raw.githubusercontent.com/nesto-software/moment-holiday/master/CONTRIBUTING'
       },
+      homepage: 'https://raw.githubusercontent.com/nesto-software/moment-holiday/master/README.md',
       search: 'auto',
       ga: 'UA-126194119-1',
       repo: 'https://github.com/nesto-software/moment-holiday',
