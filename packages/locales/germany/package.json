@@ -22,13 +22,11 @@
         "node": ">= 4.x <= 10.x"
     },
     "sideEffects": false,
-    "dependencies": {
-        "@nesto-software/moment-holiday-core": "../../core"
-    },
     "peerDependencies": {
         "moment": ">=2.0.0"
     },
     "devDependencies": {
+        "@nesto-software/moment-holiday-core": "../../core",
         "@types/jest": "^23.3.1",
         "@types/node": "10.9.4",
         "jest": "^23.5.0",

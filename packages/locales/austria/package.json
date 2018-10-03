@@ -21,9 +21,6 @@
     "engines": {
         "node": ">= 4.x <= 10.x"
     },
-    "dependencies": {
-        "@nesto-software/moment-holiday-core": "../../core"
-    },
     "peerDependencies": {
         "moment": ">=2.0.0"
     },
