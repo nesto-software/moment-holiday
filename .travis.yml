@@ -6,8 +6,8 @@ node_js:
 
 stages:
   - lint
-  - test
   - compile
+  - test
   - name: deploy
     if: branch = master
 
@@ -20,11 +20,12 @@ jobs:
     - stage: lint
       name: tslint
       script: npm run lint
-    - stage: test
-      name: jest-unit-test
-      script: npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
     - stage: compile
-      name: transpile-typescript-node
+      name: tsc-node
       script: npm run compile
-      name: transpile-typescript-browser
+      name: tsc-browser
       script: npm run compile:browser
+      
+script:
+  - npm run compile
+  - npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
