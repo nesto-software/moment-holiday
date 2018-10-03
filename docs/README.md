@@ -1,12 +1,12 @@
 <p align="center">
-  <img alt="MOMENT-HOLIDAY" width="400px" src="https://nesto-software.github.io/moment-holiday/docs/assets/images/moment-holiday.png" />
+  <img alt="MOMENT-HOLIDAY" width="400px" src="https://nesto-software.github.io/moment-holiday/assets/images/moment-holiday.png" />
 </p>
 <h2 align="center">Handling holidays with 💪 typings using TypeScript</h2>
 <custom-script data-src="assets/js/runkit/usage.js"></custom-script>
 
 [![npm](https://img.shields.io/badge/npm-v6.2.0-blue.svg)](https://www.npmjs.com/)
 [![typescript](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org/)
-[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg )](https://github.com/nesto-software/moment-holiday/blob/gh-pages/interfaces/api._moment_.moment.md)
+[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg )](https://github.com/nesto-software/moment-holiday/blob/typedoc/interfaces/api._moment_.moment.md)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![pipeline status](https://github.com/nesto-software/moment-holiday/badges/master/pipeline.svg)](https://github.com/nesto-software/moment-holiday/pipelines)
 [![coverage report](https://github.com/nesto-software/moment-holiday/badges/master/coverage.svg)](https://github.com/nesto-software/moment-holiday/commits/master)
@@ -22,12 +22,12 @@ to `@nesto-software/moment-holiday`. We want to improve the existing approaches 
 As we found out, there are a lot of challenges in providing a library which covers most business needs in the B2B sector.
 We face customers who want to bring in their own holidays.
 In order to do so, we provide database integration and a caching strategy to reduce the impact of database queries whenever possible.
-[Click here](https://nesto-software.github.io/moment-holiday/docs/#/concepts.md?id=caching) if you are curious how we do it.
+[Click here](https://nesto-software.github.io/moment-holiday/#/concepts.md?id=caching) if you are curious how we do it.
 
-For a list of currently supported countries, [click here](https://nesto-software.github.io/moment-holiday/docs/#/README?id=supported-countries-states-regions). 
-If your country is missing, we want to encourage you to add your locale bundle by [submitting a PR](https://nesto-software.github.io/moment-holiday/docs/#/CONTRIBUTING?id=submitting-a-pr).
+For a list of currently supported countries, [click here](https://nesto-software.github.io/moment-holiday/#/README?id=supported-countries-states-regions). 
+If your country is missing, we want to encourage you to add your locale bundle by [submitting a PR](https://nesto-software.github.io/moment-holiday/#/CONTRIBUTING?id=submitting-a-pr).
 
-> Our main focus is on Node.js as we think that it is most effective if holidays are managed centrally and exposed through a REST API. However, there is [browser support](https://nesto-software.github.io/moment-holiday/docs/#/browser) if you want
+> Our main focus is on Node.js as we think that it is most effective if holidays are managed centrally and exposed through a REST API. However, there is [browser support](https://nesto-software.github.io/moment-holiday/#/browser) if you want
 to use this library in the frontend.
 
 ## Features
@@ -41,7 +41,7 @@ to use this library in the frontend.
 
 ## Getting Started
 
-Check out the [Quick Start](https://nesto-software.github.io/moment-holiday/docs/#/quick-start) documentation to get started.
+Check out the [Quick Start](https://nesto-software.github.io/moment-holiday/#/quick-start) documentation to get started.
 
 ## Supported Countries, States, Regions
 

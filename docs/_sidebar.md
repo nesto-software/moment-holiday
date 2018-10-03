@@ -10,10 +10,10 @@
   - [Core Entities](concepts.md#core-entities)
 
 - API
-  - [Ambient Declarations for Moment](/gh-pages/interfaces/api._moment_.moment.md)
-  - [Moment Holiday Configuration](/gh-pages/classes/api.syncmomentholiday.md)
-  - [Mongoose Database](/gh-pages/modules/database_mongoose.md)
-  - [Core *(for development)*](/gh-pages/modules/core.md)
+  - [Ambient Declarations for Moment](/typedoc/interfaces/api._moment_.moment.md)
+  - [Moment Holiday Configuration](/typedoc/classes/api.syncmomentholiday.md)
+  - [Mongoose Database](/typedoc/modules/database_mongoose.md)
+  - [Core *(for development)*](/typedoc/modules/core.md)
 
 - Examples
   - [Overview](examples/README.md)

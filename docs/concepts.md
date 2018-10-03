@@ -8,7 +8,7 @@ Currently, we support MongoDB with Mongoose *(not the native driver)*.
 The reason behind using Mongoose is, that we want to avoid writing business logic boilerplate.
 All entities are mapped to classes. This makes it easy to create a well-documented and intuitive API.
 
-[Click here](/gh-pages/modules/database_mongoose.md) to see the API docs. If you do not know how to start: There are some [examples](examples/database.md#mongoose-mongodb).
+[Click here](/typedoc/modules/database_mongoose.md) to see the API docs. If you do not know how to start: There are some [examples](examples/database.md#mongoose-mongodb).
 
 > Database Integration is currently a `BETA` feature. There is no test coverage for the database package yet.
 
@@ -36,7 +36,7 @@ const holidaysWithDbIntegration = holidays.withDatabase(dbConfiguration);
 The holidays object is of type `SyncMomentHoliday` whereas the holidaysWithDbIntegration object is of type `AsyncMomentHoliday`.
 The difference between them is that all methods of the object with database integration return a Promise.
 In order to keep the library simple for clients which do not want to use database integration, the other (standard) type does not return a Promise.
-For more information, please [visit the docs for AbstractMomentHoliday](/gh-pages/classes/api.abstractmomentholiday.md) and its subclasses.
+For more information, please [visit the docs for AbstractMomentHoliday](/typedoc/classes/api.abstractmomentholiday.md) and its subclasses.
 
 ### What is tenancy? 
 We support multi-tenancy. That is, we store holiday definitions for different clients into the database.
@@ -87,7 +87,7 @@ This works fine if the application does not scale horizontally because the appli
 But when it comes to horizontally scaling the application, i.e. running the libary across multiple servers concurrently, we must introduce another strategy to guarantee consistency.
 Otherwise a write operation on one server does not invalidate the cache on another server. This would result in an unconsistent cluster state.
 
-We provide an entity called [DatabaseCacheConfiguration](/gh-pages/interfaces/core.idatabasecacheconfiguration.md).
+We provide an entity called [DatabaseCacheConfiguration](/typedoc/interfaces/core.idatabasecacheconfiguration.md).
 It is passed (optionally) to the concrete database class and controls the cache invalidation.
 The following caching strategies for database integrations exist:
 
@@ -159,10 +159,10 @@ This is for example the [EasterDependentDate](#easterdependentdate) type. Some h
 The following is a collection of the most important entities in this library.
 
 ### MomentHoliday 
-The moment-holiday object is a configuration holder. You initialize it using a [factory method](/gh-pages/modules/api.md#momentholidayfactorymethod).
+The moment-holiday object is a configuration holder. You initialize it using a [factory method](/typedoc/modules/api.md#momentholidayfactorymethod).
 You must define which holiday definitions should be concerned.
 You do this by passing two parameters:   
-The first parameter must be a valid [CountryIdentifier](/gh-pages/modules/api.md#countryidentifier).
+The first parameter must be a valid [CountryIdentifier](/typedoc/modules/api.md#countryidentifier).
 The second is a rest parameter (which means you may pass none, one or even multiple ones) which describes a valid [AdministrativeUnit](#hierarchy).
 We use typescript string literals to provide valid values for these parameters. Your IDE should tell you if a given string is a valid identifier if you configured typescript properly.
 
@@ -179,8 +179,8 @@ const holidays = createMomentHolidayConfiguration("DE", "BY", "AUG");
 
 ### Hierarchy 
 We chose a hierarchic structure for the country model.   
-A locale package exposes a [country](/gh-pages/classes/core.country.md).
-The country consists of multiple so called [administrative units](/gh-pages/classes/core.abstractadministrativeunit.md).
+A locale package exposes a [country](/typedoc/classes/core.country.md).
+The country consists of multiple so called [administrative units](/typedoc/classes/core.abstractadministrativeunit.md).
 An administrative unit can be a state or a region (e.g. a city which has its own holidays).
 
 The library merges the holiday definitions of the country and the administrative units which were provided to the [MomentHoliday](#momentholiday) object.
@@ -257,7 +257,7 @@ For an overview of common tags, [visit the tagging section](#tagging).
 
 ### Special Date Types 
 The library provides the following special date types which are used to specify when a holiday occurs.
-You can find an overview if you [visit the docs for AbstractDate](/gh-pages/classes/core.abstractdate.md).
+You can find an overview if you [visit the docs for AbstractDate](/typedoc/classes/core.abstractdate.md).
  
 > Dates must resolve deterministically. The [caching strategy](#caching) is based on the assumption that holiday definitions always resolve
 > at the same day for a given year. You must not implement (pseudo-) randomizing predicates or resolvers.
@@ -349,7 +349,7 @@ const holidays = createMomentHolidayConfiguration("DE", "BW");
 moment().isHoliday(holidays);   // returns true if today is a holiday in Germany/BW
 ```
 
-There are some more methods exposed on the moment object. For a complete list, [visit the API docs](/gh-pages/interfaces/api._moment_.moment.md).
+There are some more methods exposed on the moment object. For a complete list, [visit the API docs](/typedoc/interfaces/api._moment_.moment.md).
 
 > You must not import more than one moment package in your application.
 > Most 'method not found errors' originate from multiple moment objects being imported.

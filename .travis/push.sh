@@ -13,7 +13,7 @@ commit_website_files() {
 
 upload_files() {
   git remote add origin-pages https://${GH_TOKEN}@github.com/nesto-software/moment-holiday.git > /dev/null 2>&1
-  git push --quiet --set-upstream origin-pages gh-pages 
+  git push --quiet --set-upstream origin-pages typedoc
 }
 
 setup_git

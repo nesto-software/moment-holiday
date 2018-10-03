@@ -64,28 +64,28 @@ The typedoc documentation is based on your tsdoc comments. So make sure to comme
 
 This package contains core entities which describe holidays. Some of the important ones are:
 
-- [Holiday](/gh-pages/classes/core.holiday.md)
-- [Holiday Definition](/gh-pages/interfaces/core.iholidaydefinition.md)
-- [Abstract Tag](/gh-pages/classes/core.abstracttag.md)
+- [Holiday](/typedoc/classes/core.holiday.md)
+- [Holiday Definition](/typedoc/interfaces/core.iholidaydefinition.md)
+- [Abstract Tag](/typedoc/classes/core.abstracttag.md)
 
-[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg?longCache=true&style=for-the-badge )](/gh-pages/modules/core.md)
+[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg?longCache=true&style=for-the-badge )](/typedoc/modules/core.md)
 
 ### API
 
 This package is the entry point for using the moment-holiday API.   
-You should  import its [factory method](/gh-pages/modules/api.md#momentholidayfactorymethod) as default import.   
+You should  import its [factory method](/typedoc/modules/api.md#momentholidayfactorymethod) as default import.   
 Important entities contain:
 
-- [Ambient Declarations for Moment](/gh-pages/interfaces/api._moment_.moment.md)
-- [Synchronous Moment Holiday](/gh-pages/classes/api.syncmomentholiday.md)
-- [Moment Holiday with Database Support](/gh-pages/classes/api.asyncmomentholiday.md)
+- [Ambient Declarations for Moment](/typedoc/interfaces/api._moment_.moment.md)
+- [Synchronous Moment Holiday](/typedoc/classes/api.syncmomentholiday.md)
+- [Moment Holiday with Database Support](/typedoc/classes/api.asyncmomentholiday.md)
 
 There are two similar moment-holiday APIs.   
 The synchronous ('simplified') moment-holiday API does not use database modules and thus does not support client specific holiday definitions.
 The synchronous API does not use Promises at all.   
 The asynchronous ('database') moment-holiday API uses database modules. Its methods return a promise.
 
-[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg?longCache=true&style=for-the-badge )](/gh-pages/modules/api.md)
+[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg?longCache=true&style=for-the-badge )](/typedoc/modules/api.md)
 
 ### Locales
 
@@ -100,7 +100,7 @@ It depends on the [Mongoose ODM](https://mongoosejs.com/).
 
 You can use it to store holiday definitions in a database. The library loads definitions from the mongo database.
 
-[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg?longCache=true&style=for-the-badge )](/gh-pages/modules/database_mongoose.md)
+[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg?longCache=true&style=for-the-badge )](/typedoc/modules/database_mongoose.md)
 
 ## Development Notes
 The project is maintained by lerna. In order to make it easier for people who are not
