@@ -34,11 +34,16 @@ jobs:
     after_success:
       - .travis/push.sh
     deploy:
-      provider: pages
-      skip-cleanup: true
-      github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-      keep-history: true
-      local-dir: docs
+      - provider: pages
+        skip-cleanup: true
+        github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep-history: true
+        local-dir: docs
+      - provider: releases
+        api_key: $GH_TOKEN
+        file_glob: true
+        file: packages/**/dist*/**/*
+        skip_cleanup: true
 script:
 - npm run compile
 - npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
