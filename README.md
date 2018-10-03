@@ -4,7 +4,7 @@
 <h2 align="center">Handling holidays with 💪 typings using TypeScript</h2>
 <custom-script data-src="assets/js/runkit/usage.js"></custom-script>
 
-[![npm](https://img.shields.io/badge/npm-v6.2.0-blue.svg)](https://www.npmjs.com/)
+[![npm](https://img.shields.io/badge/npm-v6.2.0-blue.svg)](https://www.npmjs.com/package/@nesto-software/moment-holiday)
 [![typescript](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 [![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg )](https://github.com/nesto-software/moment-holiday/tree/typedoc/typedocs/interfaces/api._moment_.moment.md)
 [![Build Status](https://travis-ci.org/nesto-software/moment-holiday.svg?branch=master)](https://travis-ci.org/nesto-software/moment-holiday)
