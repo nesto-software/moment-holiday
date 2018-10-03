@@ -9,7 +9,7 @@
         "**/*.spec.ts",
         "**/examples/**/*",
         "**/docs/**/*",
-        "**/typedocs/**/*",
+        "**/typedocss/**/*",
         "**/coverage/**/*"
     ],
     "external-modulemap": "packages/([^/]+)/.*",

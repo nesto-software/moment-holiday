@@ -7,7 +7,7 @@ setup_git() {
 
 commit_website_files() {
   git checkout -b typedoc
-  git add . typedocs/*
+  git add -f typedocs/*
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 

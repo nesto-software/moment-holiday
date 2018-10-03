@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="MOMENT-HOLIDAY" width="400px" src="https://nesto-software.github.io/moment-holiday/docs/assets/images/moment-holiday.png" />
+  <img alt="MOMENT-HOLIDAY" width="400px" src="https://raw.githubusercontent.com/nesto-software/moment-holiday/master/docs/assets/images/moment-holiday.png" />
 </p>
 
 # Browser Support

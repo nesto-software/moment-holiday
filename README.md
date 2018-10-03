@@ -1,12 +1,12 @@
 <p align="center">
-  <img alt="MOMENT-HOLIDAY" width="400px" src="https://nesto-software.github.io/moment-holiday/docs/assets/images/moment-holiday.png" />
+  <img alt="MOMENT-HOLIDAY" width="400px" src="https://raw.githubusercontent.com/nesto-software/moment-holiday/master/docs/assets/images/moment-holiday.png" />
 </p>
 <h2 align="center">Handling holidays with 💪 typings using TypeScript</h2>
 <custom-script data-src="assets/js/runkit/usage.js"></custom-script>
 
 [![npm](https://img.shields.io/badge/npm-v6.2.0-blue.svg)](https://www.npmjs.com/)
 [![typescript](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org/)
-[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg )](https://github.com/nesto-software/moment-holiday/blob/typedoc/interfaces/api._moment_.moment.md)
+[![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg )](https://github.com/nesto-software/moment-holiday/blob/typedocs/interfaces/api._moment_.moment.md)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Build Status](https://travis-ci.org/nesto-software/moment-holiday.svg?branch=master)](https://travis-ci.org/nesto-software/moment-holiday)
 [![Coverage Status](https://coveralls.io/repos/github/nesto-software/moment-holiday/badge.svg?branch=master)](https://coveralls.io/github/nesto-software/moment-holiday?branch=master)

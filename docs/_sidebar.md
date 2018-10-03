@@ -10,10 +10,10 @@
   - [Core Entities](concepts.md#core-entities)
 
 - API
-  - [Ambient Declarations for Moment](/typedoc/interfaces/api._moment_.moment.md)
-  - [Moment Holiday Configuration](/typedoc/classes/api.syncmomentholiday.md)
-  - [Mongoose Database](/typedoc/modules/database_mongoose.md)
-  - [Core *(for development)*](/typedoc/modules/core.md)
+  - [Ambient Declarations for Moment](/typedocs/interfaces/api._moment_.moment.md)
+  - [Moment Holiday Configuration](/typedocs/classes/api.syncmomentholiday.md)
+  - [Mongoose Database](/typedocs/modules/database_mongoose.md)
+  - [Core *(for development)*](/typedocs/modules/core.md)
 
 - Examples
   - [Overview](examples/README.md)
