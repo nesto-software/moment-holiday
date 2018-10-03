@@ -23,6 +23,7 @@ jobs:
     - stage: compile
       name: tsc-node
       script: npm run compile
+    - stage: compile
       name: tsc-browser
       script: npm run compile:browser
       
