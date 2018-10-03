@@ -1,6 +1,6 @@
 {
     "name": "@nesto-software/moment-holiday-core",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "A Moment.js plugin for handling holidays.",
     "keywords": [
         "moment",
@@ -19,10 +19,10 @@
     "dependencies": {
         "date-easter": "^0.2.2",
         "mem": "^4.0.0",
+        "moment-range": "^4.0.1",
         "node-redis-pubsub": "^3.0.0",
         "quick-lru": "^1.1.0",
-        "redis": "^2.8.0",
-        "moment-range": "^4.0.1"
+        "redis": "^2.8.0"
     },
     "peerDependencies": {
         "moment": ">=2.0.0",
