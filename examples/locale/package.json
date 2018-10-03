@@ -1,0 +1,54 @@
+{
+    "name": "@nesto-software/moment-holiday-YOUR_COUNTRY",
+    "version": "0.0.1",
+    "description": "The YOUR_COUNTRY locale for moment-holiday.",
+    "keywords": [
+        "moment",
+        "momentjs",
+        "holiday",
+        "holidays",
+    ],
+    "author": "Nesto Software GmbH",
+    "contributors": [
+        "Martin Löper <martin.loeper@nesto-software.de>"
+    ],
+    "sideEffects": false,
+    "engines": {
+        "node": ">= 4.x <= 10.x"
+    },
+    "peerDependencies": {
+        "@nesto-software/moment-holiday-core": ">=0.0.1",
+        "moment": ">=2.0.0"
+    },
+    "devDependencies": {
+        "@nesto-software/moment-holiday-core": "file:../../core",
+        "@types/jest": "^23.3.1",
+        "@types/node": "10.9.4",
+        "jest": "^23.5.0",
+        "ts-jest": "^23.1.4",
+        "tslint": "^5.11.0",
+        "typescript": "^3.0.1"
+    },
+    "files": [
+        "dist/**/*",
+        "dist.browser/**/*"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "dist/index.js",
+    "browser": "dist.browser/index.js",
+    "scripts": {
+        "compile": "tsc -p tsconfig.node.json",
+        "compile:browser": "tsc -p tsconfig.browser.json",
+        "test": "npm run test:unit",
+        "test:coverage": "jest --config=test/unit/jest.config.js --coverage",
+        "test:unit": "jest --config=test/unit/jest.config.js",
+        "lint": "tslint 'src/**/*.ts'",
+        "clean": "rm -Rf dist",
+        "snyk:monitor": "snyk auth $SNYK_TOKEN && snyk monitor",
+        "snyk:protect": "snyk protect",
+        "snyk:test": "snyk test"
+    },
+    "repository": "https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/YOUR_COUNTRY"
+}

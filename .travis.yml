@@ -1,0 +1,66 @@
+language: node_js
+node_js:
+- node
+- lts/*
+if: branch != typedoc
+branches:
+  except:
+  - /^untagged/
+stages:
+- lint
+- compile
+- test
+- name: deploy
+  if: branch = master
+install:
+- npm ci
+- npm run config:peers
+jobs:
+  include:
+  - stage: lint
+    name: tslint
+    script: npm run lint
+  - stage: compile
+    name: tsc
+    script:
+    - npm run compile
+    - npm run compile:browser
+  - stage: deploy
+    name: deploy-everything
+    node_js:
+      - "8"
+    script:
+    - npm run compile
+    - npm run compile:browser
+    - node_modules/.bin/npm-cli-login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL -s $NPM_SCOPE
+    - npm run publish:ci
+    - npm run typedoc:create
+    after_success:
+      - .travis/push.sh
+deploy:
+      - provider: pages
+        skip-cleanup: true
+        github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep-history: true
+        local-dir: docs
+
+# TODO:  find a way to release alpha packages through github releases
+#      - provider: releases
+#        api_key: $GH_TOKEN
+#        file_glob: true
+#        file: "**/*.tgz"
+#        prerelease: true
+#        skip_cleanup: true
+#        body: "Prerelease"
+script:
+- npm run compile
+- npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
+# TODO: enable gitter integration
+#notifications:
+#  webhooks:
+#    urls:
+#      - https://webhooks.gitter.im/e/f0777a190c6c7ee611f1
+#    on_success: change
+#    on_failure: always
+#    on_start: never 

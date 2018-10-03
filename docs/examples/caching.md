@@ -1,0 +1,3 @@
+# Caching Examples
+
+## Time Measurement

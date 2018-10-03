@@ -1,0 +1,9 @@
+// we do the same as in the nodes build, but include the test files
+// otherwise errors are not shown correctly
+{
+    "extends": "./tsconfig.node.json",
+    "include": [
+        "./src/**/*",
+        "./test/**/*",
+    ]
+}

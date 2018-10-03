@@ -1,0 +1,21 @@
+{
+  "name": "@nesto-software/moment-holiday-browser-test",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Example project which demonstrates how to use moment-holiday in the browser.",
+  "main": "index.js",
+  "dependencies": {
+    "@nesto-software/moment-holiday": "../../packages/api"
+  },
+  "peerDependencies": {
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "scripts": {
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Moment Holiday (by Nesto)",
+    "mode": "modules",
+    "out": "typedocs",
+    "theme": "markdown",
+    "ignoreCompilerErrors": "true",
+    "preserveConstEnums": "true",
+    "exclude": [
+        "**/*.spec.ts",
+        "**/test/**/*",
+        "**/examples/**/*",
+        "**/docs/**/*",
+        "**/typedocss/**/*",
+        "**/coverage/**/*"
+    ],
+    "external-modulemap": "packages/([^/]+)/.*",
+    "stripInternal": "false",
+    "readme": "none",
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "excludeProtected": true
+}

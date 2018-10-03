@@ -1,0 +1,84 @@
+{
+  "name": "@nesto-software/moment-holiday-monorepo",
+  "description": "A Moment.js plugin for handling holidays.",
+  "private": true,
+  "keywords": [
+    "moment",
+    "momentjs",
+    "holiday",
+    "holidays"
+  ],
+  "author": "Nesto Software GmbH",
+  "contributors": [
+    "Martin Löper <martin.loeper@nesto-software.de>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nesto-software/moment-holiday.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nesto-software/moment-holiday/issues"
+  },
+  "homepage": "https://github.com/nesto-software/moment-holiday",
+  "license": "MIT",
+  "peerDependencies": {
+    "moment": ">=2.0.0",
+    "mongoose": "5.3.1",
+    "moment-range": "^4.0.1"
+  },
+  "dependencies": {
+    "@nesto-software/moment-holiday": "file:./packages/api",
+    "@nesto-software/moment-holiday-database-mongoose": "file:./packages/database-mongoose"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/mem": "1.1.2",
+    "@types/mongoose": "^4.7.39",
+    "@types/node": "10.9.4",
+    "@types/node-redis-pubsub": "3.0.0",
+    "@types/quick-lru": "1.1.0",
+    "@types/redis": "2.8.6",
+    "@types/shortid": "0.0.29",
+    "coveralls": "^3.0.2",
+    "doctoc": "^1.3.1",
+    "jest": "^23.5.0",
+    "jest-create-mock-instance": "^1.1.0",
+    "lerna": "^3.2.1",
+    "nodemon": "^1.14.8",
+    "npm-cli-login": "0.0.10",
+    "npm-install-peers": "^1.2.1",
+    "snyk": "^1.94.0",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typedoc": "0.12.0",
+    "typedoc-plugin-markdown": "^1.1.15",
+    "typedoc-plugin-monorepo": "^0.1.0",
+    "typescript": "^3.0.1"
+  },
+  "engines": {
+    "node": ">= 8.x <= 10.x",
+    "npm": ">= 2.x <= 6.x"
+  },
+  "scripts": {
+    "config:peers": "npm-install-peers",
+    "dev-install": "npm install && npm run config:peers",
+    "compile": "lerna run compile",
+    "compile:browser": "lerna run compile:browser",
+    "clean:top-node-modules": "rm -Rf node_modules",
+    "clean:packages-node-modules": "lerna clean -y",
+    "clean:packages-dist-folders": "lerna run clean",
+    "clean": "npm run clean:packages-dist-folders && npm run clean:packages-node-modules",
+    "lint": "lerna run lint --loglevel=verbose",
+    "test": "jest",
+    "test:debug": "node --inspect=5858 --inspect-brk node_modules/.bin/jest --runInBand --no-cache --config=./jest.config.js --coverage false",
+    "publish:ci": "lerna publish --canary --no-verify-access --yes --force-publish=*",
+    "publish": "npm run compile && lerna publish",
+    "typedoc:create": "typedoc --options typedoc.json .",
+    "docsify:serve": "docsify serve ./docs",
+    "toc": "doctoc --github README.md",
+    "snyk:monitor": "snyk auth $SNYK_TOKEN && snyk monitor && lerna run snyk:monitor",
+    "snyk:protect": "snyk protect",
+    "snyk:test": "snyk test && lerna run snyk:test"
+  }
+}

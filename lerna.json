@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "packages/*",
+    "packages/locales/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "message": "chore(@nesto-software/moment-holiday) publish %s release",
+      "allowBranch": [
+        "master",
+        "dev"
+      ],
+      "conventionalCommits": true
+    }
+  },
+  "npmClient": "npm",
+  "version": "independent"
+}
