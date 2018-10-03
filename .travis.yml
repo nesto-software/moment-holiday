@@ -43,7 +43,8 @@ jobs:
       - provider: releases
         api_key: $GH_TOKEN
         file_glob: true
-        file: packages/**/dist*/**/*
+        file: **/*.tgz
+        prerelease: true
         skip_cleanup: true
 script:
 - npm run compile
