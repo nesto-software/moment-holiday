@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moment Holiday</title>
+  <link rel="icon" href="assets/images/nesto.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A Moment.js plugin for handling holidays.">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/vue-material@beta/dist/vue-material.min.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="//embed.runkit.com"></script>
+  <script src="assets/js/runkit.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script src="//unpkg.com/vue/dist/vue.min.js"></script>
+  <script src="//unpkg.com/vue-material@beta"></script>
+  <script src="./assets/js/docsify.js"></script>
+  <script>
+    window.$docsify = {
+      name: '<img src="assets/images/moment-holiday.png"/>',
+      loadSidebar: true,
+      coverpage: true,
+      onlyCover: true,
+      auto2top: true,
+      autoHeader: false,
+      subMaxLevel: 3,
+      maxLevel: 4,
+      search: {
+        paths: 'auto',
+        placeholder: 'Search',
+        noData: 'No Results.'
+      },
+      alias: {
+        '/browser*': 'https://raw.githubusercontent.com/nesto-software/moment-holiday/master/examples/browser/README.md',
+        '/node*': 'https://raw.githubusercontent.com/nesto-software/moment-holiday/master/examples/node/README.md',
+        '.*?/CONTRIBUTING': 'https://raw.githubusercontent.com/nesto-software/moment-holiday/master/CONTRIBUTING'
+      },
+      homepage: 'https://raw.githubusercontent.com/nesto-software/moment-holiday/master/README.md',
+      search: 'auto',
+      ga: 'UA-126194119-1',
+      repo: 'https://github.com/nesto-software/moment-holiday',
+      plugins: [
+        docsify.docsifyPlugin,
+      ],
+      markdown: {
+        renderer: {
+          code: (text, lang) => (
+            docsify.markdown.code({ lang, text })
+          ),
+        }
+      },
+    }
+
+    Vue.use(VueMaterial.default)
+
+    var vm = new Vue({
+      el: '#app',
+      data: {
+        tabNamespaces: {},
+      },
+      methods: {
+        onTabChange: (namespace, tab) => {
+          if (tab === vm.$data.tabNamespaces[namespace]) {
+            return;
+          }
+          vm.$data.tabNamespaces[namespace] = tab;
+        }
+      },
+    });
+  </script>
+  <script src="assets/js/external-script.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code@2"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//unpkg.com/prismjs@1.13.0/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+</body>
+
+</html>
