@@ -1,4 +1,4 @@
-# Concepts
+# Concepts {docsify-ignore-all}
 
 ## Database Integration 
 A system which allows customization by the user needs a storage solution.
