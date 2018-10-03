@@ -1,31 +1,36 @@
 language: node_js
-
 node_js:
-  - "node"
-  - "lts/*"
-
+- node
+- lts/*
 stages:
-  - lint
-  - compile
-  - test
-  - name: deploy
-    if: branch = master
-
+- lint
+- compile
+- test
+- name: deploy
+  if: branch = master
 install:
-  - npm ci
-  - npm run config:peers
-
+- npm ci
+- npm run config:peers
 jobs:
   include:
-    - stage: lint
-      name: tslint
-      script: npm run lint
-    - stage: compile
-      name: tsc
-      script: 
-        - npm run compile
-        - npm run compile:browser
-      
+  - stage: lint
+    name: tslint
+    script: npm run lint
+  - stage: compile
+    name: tsc
+    script:
+    - npm run compile
+    - npm run compile:browser
+  - stage: deploy
+    name: deploy-everything
+    script:
+    - npm run compile
+    - npm run compile:browser
+    - node_modules/.bin/npm-cli-login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL -s $NPM_SCOPE
+    - npm run publish:ci
+    - npm run typedoc:create
+    after_success:
+      - .travis/push.sh
 script:
-  - npm run compile
-  - npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- npm run compile
+- npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
