@@ -73,7 +73,7 @@
     "test": "jest",
     "test:debug": "node --inspect=5858 --inspect-brk node_modules/.bin/jest --runInBand --no-cache --config=./jest.config.js --coverage false",
     "publish:ci": "lerna publish --canary --no-verify-access --yes --force-publish=*",
-    "publish": "npm run compile && lerna publish",
+    "publish": "npm run compile && npm run compile:browser && lerna publish",
     "typedoc:create": "typedoc --options typedoc.json .",
     "docsify:serve": "docsify serve ./docs",
     "toc": "doctoc --github README.md",
