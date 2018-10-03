@@ -22,10 +22,9 @@ jobs:
       script: npm run lint
     - stage: compile
       name: tsc-node
-      script: npm run compile
-    - stage: compile
-      name: tsc-browser
-      script: npm run compile:browser
+      script: 
+        - npm run compile
+        - npm run compile:browser
       
 script:
   - npm run compile
