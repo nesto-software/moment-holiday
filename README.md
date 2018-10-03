@@ -80,8 +80,11 @@ Countries: 2
 import moment from "moment";  // always import moment before moment-holiday (peer-dependency with side effects)
 import createMomentHolidayConfiguration from "@nesto-software/moment-holiday";
 
-const holidays = createMomentHolidayConfiguration("DE", "BW");
+// create a holiday configuration for Germany / Bavaria
+const holidays = createMomentHolidayConfiguration("DE", "BY");
 const holidays2018 = holidays.in(2018);
+
+// display the holiday names and their corresponding date for 2018
 console.log(holidays2018.map(holiday => holiday.name + " - " + holiday.moment.format("DD.MM.YYYY")));
 ```
 
