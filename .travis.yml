@@ -21,11 +21,11 @@ jobs:
       name: tslint
       script: npm run lint
     - stage: compile
-      name: tsc-node
+      name: tsc
       script: 
         - npm run compile
         - npm run compile:browser
       
 script:
   - npm run compile
-  - npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - npm run test -- --coverage --coverageReporters=text-lcov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

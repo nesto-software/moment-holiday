@@ -10,6 +10,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![pipeline status](https://gitlab.com/nesto-software/moment-holiday/badges/master/pipeline.svg)](https://gitlab.com/nesto-software/moment-holiday/pipelines)
 [![coverage report](https://gitlab.com/nesto-software/moment-holiday/badges/master/coverage.svg)](https://gitlab.com/nesto-software/moment-holiday/commits/master)
+[![Known Vulnerabilities](https://snyk.io/test/npm/@nesto-software/moment-holiday/badge.svg)](https://snyk.io/test/npm/@nesto-software/moment-holiday)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A [Moment.js](https://github.com/moment/moment) plugin for handling holidays at scale.
