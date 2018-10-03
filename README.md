@@ -8,8 +8,8 @@
 [![typescript](https://img.shields.io/badge/types-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 [![docs](https://img.shields.io/badge/api%20docs%20with-TypeDoc-blue.svg )](https://gitlab.com/nesto-software/moment-holiday/blob/gh-pages/interfaces/api._moment_.moment.md)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
-[![pipeline status](https://gitlab.com/nesto-software/moment-holiday/badges/master/pipeline.svg)](https://gitlab.com/nesto-software/moment-holiday/pipelines)
-[![coverage report](https://gitlab.com/nesto-software/moment-holiday/badges/master/coverage.svg)](https://gitlab.com/nesto-software/moment-holiday/commits/master)
+[![Build Status](https://travis-ci.org/nesto-software/moment-holiday.svg?branch=master)](https://travis-ci.org/nesto-software/moment-holiday)
+[![Coverage Status](https://coveralls.io/repos/github/nesto-software/moment-holiday/badge.svg?branch=master)](https://coveralls.io/github/nesto-software/moment-holiday?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@nesto-software/moment-holiday/badge.svg)](https://snyk.io/test/npm/@nesto-software/moment-holiday)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
