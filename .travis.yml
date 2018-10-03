@@ -3,6 +3,9 @@ node_js:
 - node
 - lts/*
 if: branch != typedoc
+branches:
+  except:
+  - /^untagged/
 stages:
 - lint
 - compile
