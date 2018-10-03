@@ -46,7 +46,7 @@ jobs:
       - provider: releases
         api_key: $GH_TOKEN
         file_glob: true
-        file: **/*.tgz
+        file: "**/*.tgz"
         prerelease: true
         skip_cleanup: true
 script:
