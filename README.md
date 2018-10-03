@@ -95,6 +95,8 @@ console.log(holidays2018.map(holiday => holiday.name + " - " + holiday.moment.fo
 
 </div>
 
+For more examples, please visit the [docsify examples page](https://nesto-software.github.io/moment-holiday/#/examples/README).
+
 ## License
 Copyright 2018 Nesto Software GmbH
 
