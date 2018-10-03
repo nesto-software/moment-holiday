@@ -11,7 +11,7 @@
 [![Build Status](https://travis-ci.org/nesto-software/moment-holiday.svg?branch=master)](https://travis-ci.org/nesto-software/moment-holiday)
 [![Coverage Status](https://coveralls.io/repos/github/nesto-software/moment-holiday/badge.svg?branch=master)](https://coveralls.io/github/nesto-software/moment-holiday?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@nesto-software/moment-holiday/badge.svg)](https://snyk.io/test/npm/@nesto-software/moment-holiday)
-[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Join the chat at https://gitter.im/nesto-software/moment-holiday](https://badges.gitter.im/nesto-software/moment-holiday.svg)](https://gitter.im/nesto-software/moment-holiday?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A [Moment.js](https://github.com/moment/moment) plugin for handling holidays at scale.
 
