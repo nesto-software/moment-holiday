@@ -23,12 +23,12 @@ to `@nesto-software/moment-holiday`. We want to improve the existing approaches 
 As we found out, there are a lot of challenges in providing a library which covers most business needs in the B2B sector.
 We face customers who want to bring in their own holidays.
 In order to do so, we provide database integration and a caching strategy to reduce the impact of database queries whenever possible.
-[Click here](https://nesto-software.github.io/moment-holiday/docs/#/concepts.md?id=caching) if you are curious how we do it.
+[Click here](https://nesto-software.github.io/moment-holiday/#/concepts.md?id=caching) if you are curious how we do it.
 
-For a list of currently supported countries, [click here](https://nesto-software.github.io/moment-holiday/docs/#/README?id=supported-countries-states-regions). 
-If your country is missing, we want to encourage you to add your locale bundle by [submitting a PR](https://nesto-software.github.io/moment-holiday/docs/#/CONTRIBUTING?id=submitting-a-pr).
+For a list of currently supported countries, [click here](https://nesto-software.github.io/moment-holiday/#/README?id=supported-countries-states-regions). 
+If your country is missing, we want to encourage you to add your locale bundle by [submitting a PR](https://nesto-software.github.io/moment-holiday/#/CONTRIBUTING?id=submitting-a-pr).
 
-> Our main focus is on Node.js as we think that it is most effective if holidays are managed centrally and exposed through a REST API. However, there is [browser support](https://nesto-software.github.io/moment-holiday/docs/#/browser) if you want
+> Our main focus is on Node.js as we think that it is most effective if holidays are managed centrally and exposed through a REST API. However, there is [browser support](https://nesto-software.github.io/moment-holiday/#/browser) if you want
 to use this library in the frontend.
 
 ## Features
@@ -42,7 +42,7 @@ to use this library in the frontend.
 
 ## Getting Started
 
-Check out the [Quick Start](https://nesto-software.github.io/moment-holiday/docs/#/quick-start) documentation to get started.
+Check out the [Quick Start](https://nesto-software.github.io/moment-holiday/#/quick-start) documentation to get started.
 
 ## Supported Countries, States, Regions
 
