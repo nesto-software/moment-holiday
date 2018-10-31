@@ -44,7 +44,7 @@ export class GermanCountryLocale extends AbstractLocale {
                 ],
             },
             {
-                name: HolidayName.REFORMATIONSTAG,
+                name: HolidayName.REFORMATIONSTAG_JUBILAEUM,
                 date: NonRecurringDate.forYears(31, 9, [2017]),
                 tags: [
                     new TypeTag(TypeTagValue.PUBLIC),

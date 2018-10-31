@@ -16,6 +16,7 @@ export enum HolidayName {
     ALLERHEILIGEN = "Allerheiligen",
     FRIEDENSFEST = "Friedensfest",
     REFORMATIONSTAG = "Reformationstag",
+    REFORMATIONSTAG_JUBILAEUM = "Reformationstag-500er-Jubiläum",
     OSTERSONNTAG = "Ostersonntag",
     PFINGSTSONNTAG = "Pfingstsonntag",
     BUSS_UND_BETTAG = "Buß- und Bettag",
