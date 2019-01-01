@@ -50,7 +50,7 @@ Countries: 2
 ├── [DE](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/country-locale.ts): Germany (Deutschland)   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [BW](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/bw.state-locale.ts): Baden-Württemberg   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [BY](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/by.state-locale.ts): Bayern   
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [AUG](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/aug.region-locale.ts): Augsburg   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [BY_AUG](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/aug.region-locale.ts): Augsburg   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [BY_CATHOLIC](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/by-catholic.region-locale.ts): Überwiegend katholische Gemeinden     
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [BE](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/be.state-locale.ts): Berlin   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [BB](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/bb.state-locale.ts): Brandenburg   
