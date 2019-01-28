@@ -2,10 +2,10 @@ import {
     AbstractLocale,
     IHolidayDefinitionInternal,
     Legislation,
-    NonRecurringDate,
-    TypeTagValue,
-    TypeTag,
     LegislationTag,
+    NonRecurringDate,
+    TypeTag,
+    TypeTagValue,
 } from "@nesto-software/moment-holiday-core";
 import * as url from "url";
 import { COMMON_STATE_HOLIDAY_DEFINITIONS } from "./common-state-holiday-definitions";
