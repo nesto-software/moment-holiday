@@ -21,4 +21,5 @@ export enum HolidayName {
     PFINGSTSONNTAG = "Pfingstsonntag",
     BUSS_UND_BETTAG = "Buß- und Bettag",
     WELTFRAUENTAG = "Weltfrauentag",
+    WELTKINDERTAG = "Weltkindertag",
 }
