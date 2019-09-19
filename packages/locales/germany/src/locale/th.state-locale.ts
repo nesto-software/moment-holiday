@@ -29,6 +29,14 @@ export class THStateLocale extends AbstractLocale {
                     new LegislationTag(this.legislation),
                 ],
             },
+            {
+                name: HolidayName.WELTKINDERTAG,
+                date: new RecurringDate(20, 8),
+                tags: [
+                    new TypeTag(TypeTagValue.PUBLIC),
+                    new LegislationTag(this.legislation),
+                ],
+            },
         ]);
     }
 }
