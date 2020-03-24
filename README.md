@@ -68,7 +68,7 @@ Countries: 3
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [SH](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/sh.state-locale.ts): Schleswig-Holstein   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [TH](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/th.state-locale.ts): Thüringen   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [TH_CATHOLIC](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/th-catholic.region-locale.ts): Überwiegend katholische Gemeinden   
-├── [DE](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/sweden/src/locale/country-locale.ts): Sweden (Sverige) `country locale only`    
+├── [SE](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/sweden/src/locale/country-locale.ts): Sweden (Sverige) `country locale only`    
 └── [AT](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/austria/src/locale/country-locale.ts): Austria (Österreich) `country locale only`   
 
 ## Roadmap
