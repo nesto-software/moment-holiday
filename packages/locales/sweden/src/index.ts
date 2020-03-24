@@ -1,3 +1,5 @@
+export { HolidayName as HolidayNameSweden } from "./locale/holiday-names";
+
 export {
     SwedishHolidayDefinitionFactory,
     SwedishCountryAbbrevition,

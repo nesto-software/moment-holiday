@@ -1,4 +1,8 @@
-import { Holiday, HolidayArray, IDateRangeOptions } from "@nesto-software/moment-holiday-core";
+import {
+    Holiday,
+    HolidayArray,
+    IDateRangeOptions,
+} from "@nesto-software/moment-holiday-core";
 import * as moment from "moment";
 import { Moment } from "moment";
 import { AbstractMomentHoliday } from "./abstract-moment-holiday";
@@ -21,10 +25,18 @@ declare module "moment" {
          * @param predicate if a holiday is determined, you can filter its tags via a predicate
          * @returns true if this moment's day is a holiday
          */
-        isHoliday(momentHoliday: AsyncMomentHoliday, predicate?: (holiday: Holiday) => boolean): Promise<boolean>;
-        isHoliday(momentHoliday: SyncMomentHoliday, predicate?: (holiday: Holiday) => boolean): boolean;
-        isHoliday(momentHoliday: AbstractMomentHoliday, predicate?: (holiday: Holiday) => boolean):
-            Promise<boolean> | boolean;
+        isHoliday(
+            momentHoliday: AsyncMomentHoliday,
+            predicate?: (holiday: Holiday) => boolean,
+        ): Promise<boolean>;
+        isHoliday(
+            momentHoliday: SyncMomentHoliday,
+            predicate?: (holiday: Holiday) => boolean,
+        ): boolean;
+        isHoliday(
+            momentHoliday: AbstractMomentHoliday,
+            predicate?: (holiday: Holiday) => boolean,
+        ): Promise<boolean> | boolean;
 
         /**
          * Returns the upcoming holiday for the given moment.
@@ -127,57 +139,62 @@ declare module "moment" {
     }
 }
 
-moment.fn.isHoliday = function (
+moment.fn.isHoliday = function(
     momentHoliday: AbstractMomentHoliday,
     predicate?: (holiday: Holiday) => boolean,
 ): any {
     return momentHoliday.isHoliday(this, predicate);
 };
 
-moment.fn.nextHoliday = function (
+moment.fn.nextHoliday = function(
     momentHoliday: AbstractMomentHoliday,
     predicate?: (holiday: Holiday) => boolean,
     currentDayInclusive?: boolean,
 ): any {
-
     return momentHoliday.nextHoliday(this, predicate, currentDayInclusive);
 };
 
-moment.fn.previousHoliday = function (
+moment.fn.previousHoliday = function(
     momentHoliday: AbstractMomentHoliday,
     predicate?: (holiday: Holiday) => boolean,
     currentDayInclusive?: boolean,
 ): any {
-
     return momentHoliday.previousHoliday(this, predicate, currentDayInclusive);
 };
 
-moment.fn.nextHolidayWithName = function (
+moment.fn.nextHolidayWithName = function(
     momentHoliday: AbstractMomentHoliday,
     holidayName: string,
     currentDayInclusive?: boolean,
     maxSearchYears?: number,
 ): any {
-
-    return momentHoliday.nextHolidayWithName(this, holidayName, currentDayInclusive, maxSearchYears);
+    return momentHoliday.nextHolidayWithName(
+        this,
+        holidayName,
+        currentDayInclusive,
+        maxSearchYears,
+    );
 };
 
-moment.fn.previousHolidayWithName = function (
+moment.fn.previousHolidayWithName = function(
     momentHoliday: AbstractMomentHoliday,
     holidayName: string,
     currentDayInclusive?: boolean,
     maxSearchYears?: number,
 ): any {
-
-    return momentHoliday.previousHolidayWithName(this, holidayName, currentDayInclusive, maxSearchYears);
+    return momentHoliday.previousHolidayWithName(
+        this,
+        holidayName,
+        currentDayInclusive,
+        maxSearchYears,
+    );
 };
 
-moment.fn.holidaysBetween = function (
+moment.fn.holidaysBetween = function(
     momentHoliday: AbstractMomentHoliday,
     end: Moment,
     options?: IDateRangeOptions,
 ): any {
-
     return momentHoliday.between(this, end, options);
 };
 
@@ -196,12 +213,16 @@ export { AsyncMomentHoliday } from "./async-moment-holiday";
 export { SyncMomentHoliday } from "./sync-moment-holiday";
 
 /* export country specific data (such as holiday names and tags) */
-export {
-    HolidayNameGermany,
-} from "@nesto-software/moment-holiday-germany";
 
+// Germany
+export { HolidayNameGermany } from "@nesto-software/moment-holiday-germany";
+
+// Austria
 export {
     ReligionTag,
     Religion,
     HolidayNameAustria,
 } from "@nesto-software/moment-holiday-austria";
+
+// Sweden
+export { HolidayNameSweden } from "@nesto-software/moment-holiday-sweden";

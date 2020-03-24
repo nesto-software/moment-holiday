@@ -1,6 +1,7 @@
 import { AustrianHolidayDefinitionFactory } from "@nesto-software/moment-holiday-austria";
 import { AbstractHolidayDefinitionFactory } from "@nesto-software/moment-holiday-core";
 import { GermanHolidayDefinitionFactory } from "@nesto-software/moment-holiday-germany";
+import { SwedishHolidayDefinitionFactory } from "@nesto-software/moment-holiday-sweden";
 import { CountryAbbreviation, CountryIdentifier, CountryName } from "./abstract-moment-holiday";
 
 export class HolidayDefinitionFactoryRegistry {
@@ -8,6 +9,7 @@ export class HolidayDefinitionFactoryRegistry {
     private readonly availableHolidayDefinitionFactories: AbstractHolidayDefinitionFactory[] = [
         new GermanHolidayDefinitionFactory(),
         new AustrianHolidayDefinitionFactory(),
+        new SwedishHolidayDefinitionFactory(),
     ];
 
     private factoryByCountryName = new Map<CountryName, AbstractHolidayDefinitionFactory>();

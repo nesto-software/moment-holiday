@@ -2,6 +2,12 @@ import {
     AustrianCountryAbbrevition,
     AustrianCountryName,
 } from "@nesto-software/moment-holiday-austria";
+
+import {
+    SwedishCountryAbbrevition,
+    SwedishCountryName,
+} from "@nesto-software/moment-holiday-sweden";
+
 import { Moment } from "moment";
 
 import {
@@ -274,11 +280,12 @@ import { SyncMomentHoliday } from "./sync-moment-holiday";
 // define country identifiers
 type GermanCountryIdentifier = GermanCountryName | GermanCountryAbbrevition;
 type AustrianCountryIdentifier = AustrianCountryName | AustrianCountryAbbrevition;
+type SwedishCountryIdentifier = SwedishCountryName | SwedishCountryAbbrevition;
 
 // merge identifiers for all countries
-export type CountryName = GermanCountryName | AustrianCountryName;
-export type CountryAbbreviation = GermanCountryAbbrevition | AustrianCountryAbbrevition;
-export type CountryIdentifier = GermanCountryIdentifier | AustrianCountryIdentifier;
+export type CountryName = GermanCountryName | AustrianCountryName | SwedishCountryName;
+export type CountryAbbreviation = GermanCountryAbbrevition | AustrianCountryAbbrevition | SwedishCountryAbbrevition;
+export type CountryIdentifier = GermanCountryIdentifier | AustrianCountryIdentifier | SwedishCountryIdentifier;
 export type StateIdentifier = GermanStateAbbreviation;  // AustrianStateAbbreviation
 export type RegionIdentifier = GermanRegionAbbreviation;
 
@@ -289,12 +296,16 @@ export function MomentHolidayFactoryMethod(country: GermanCountryIdentifier,
     ...administrativeUnits: Array<GermanStateAbbreviation | GermanRegionAbbreviation | "ALL">): SyncMomentHoliday;
 
 export function MomentHolidayFactoryMethod(country: AustrianCountryIdentifier,
-    ...administrativeUnits: Array<"ALL">): SyncMomentHoliday;   // AustrianStateAbbreviation
+    ...administrativeUnits: Array<"ALL">): SyncMomentHoliday;
+
+// tslint:disable-next-line:unified-signatures
+export function MomentHolidayFactoryMethod(country: SwedishCountryIdentifier,
+    ...administrativeUnits: Array<"ALL">): SyncMomentHoliday;
 
 // see: https://github.com/Microsoft/TypeScript/issues/27297s
-export function MomentHolidayFactoryMethod(
-    country: CountryIdentifier,
-    ...administrativeUnits: Array<AdministrativeUnitIdentifier | "ALL">): SyncMomentHoliday;
+// export function MomentHolidayFactoryMethod(
+//    country: CountryIdentifier,
+//    ...administrativeUnits: Array<AdministrativeUnitIdentifier | "ALL">): SyncMomentHoliday;
 
 /**
  * Returns a moment holiday configuration for the given entities.
