@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/compare/@nesto-software/moment-holiday@1.0.5...@nesto-software/moment-holiday@1.1.0) (2020-03-24)
+
+
+### Features
+
+* add swedish holiday package ([05a5fdf](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/commit/05a5fdf))
+
+
+
+
+
 ## [1.0.5](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/compare/@nesto-software/moment-holiday@1.0.3...@nesto-software/moment-holiday@1.0.5) (2019-09-30)
 
 **Note:** Version bump only for package @nesto-software/moment-holiday
