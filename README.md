@@ -46,7 +46,7 @@ Check out the [Quick Start](https://nesto-software.github.io/moment-holiday/#/qu
 
 ## Supported Countries, States, Regions
 
-Countries: 2   
+Countries: 3   
 ├── [DE](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/country-locale.ts): Germany (Deutschland)   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [BW](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/bw.state-locale.ts): Baden-Württemberg   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [BY](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/by.state-locale.ts): Bayern   
@@ -68,6 +68,7 @@ Countries: 2
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [SH](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/sh.state-locale.ts): Schleswig-Holstein   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [TH](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/th.state-locale.ts): Thüringen   
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [TH_CATHOLIC](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/germany/src/locale/th-catholic.region-locale.ts): Überwiegend katholische Gemeinden   
+├── [DE](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/sweden/src/locale/country-locale.ts): Sweden (Sverige) `country locale only`    
 └── [AT](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/austria/src/locale/country-locale.ts): Austria (Österreich) `country locale only`   
 
 ## Roadmap
