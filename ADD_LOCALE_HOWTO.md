@@ -2,6 +2,7 @@
 The following procedure describes how to add a new locale package which was submitted via a PR.
 If you are interested in how to create a new locale package, please visit [CONTRIBUTING.md](CONTRIBUTING.md).
 
+- Create a new branch out of master.
 - Add the remote branch via: `git remote add <username> <url>`
 - Merge the respective branch: `git pull <username> <user-remote-branch>`
 - Check if exports are defined as expected in the locale package index.ts file
@@ -12,4 +13,7 @@ If you are interested in how to create a new locale package, please visit [CONTR
 - Register the new holiday-definition-factory into api package's *holiday-definition-factory-registry.ts*.
 - In order to test if everything was added correctly: `npm run compile`
 - optionally: add usage example to *examples/node/src/index.ts*
+- Add the new country to the README.md file.
+- Add all the changes and commit them.
+- Merge the new branch into master.
 - Finally publish via: `npm run publish`
