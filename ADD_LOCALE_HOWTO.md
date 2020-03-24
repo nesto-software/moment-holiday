@@ -1,5 +1,6 @@
 # How to add a new locale package from a remote branch?
-The follwoing procedure 
+The following procedure describes how to add a new locale package which was submitted via a PR.
+If you are interested in how to create a new locale package, please visit [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - Add the remote branch via: `git remote add <username> <url>`
 - Merge the respective branch: `git pull <username> <user-remote-branch>`
