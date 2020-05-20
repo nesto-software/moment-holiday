@@ -15,9 +15,6 @@
     "contributors": [
         "Martin Löper <martin.loeper@nesto-software.de>"
     ],
-    "engines": {
-        "node": ">= 4.x"
-    },
     "sideEffects": false,
     "peerDependencies": {
         "@nesto-software/moment-holiday-core": ">=0.0.1",

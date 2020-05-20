@@ -58,8 +58,7 @@
     "typescript": "3.0.1"
   },
   "engines": {
-    "node": ">= 8.x",
-    "npm": ">= 2.x <= 6.x"
+    "npm": ">= 2.x"
   },
   "scripts": {
     "config:peers": "npm-install-peers",

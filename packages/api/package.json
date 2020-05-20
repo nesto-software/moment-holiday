@@ -12,9 +12,6 @@
   "contributors": [
     "Martin Löper <martin.loeper@nesto-software.de>"
   ],
-  "engines": {
-    "node": ">= 4.x"
-  },
   "sideEffects": false,
   "dependencies": {
     "@nesto-software/moment-holiday-austria": "file:../locales/austria",

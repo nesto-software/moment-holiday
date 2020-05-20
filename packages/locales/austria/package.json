@@ -18,9 +18,6 @@
         "Martin Löper <martin.loeper@nesto-software.de>"
     ],
     "sideEffects": false,
-    "engines": {
-        "node": ">= 4.x"
-    },
     "peerDependencies": {
         "moment": ">=2.0.0"
     },

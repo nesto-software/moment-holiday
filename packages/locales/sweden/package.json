@@ -20,9 +20,6 @@
     "Mattias Reichel <mattias.reichel@gmail.com>"
   ],
   "sideEffects": false,
-  "engines": {
-    "node": ">= 4.x"
-  },
   "peerDependencies": {
     "moment": ">=2.0.0"
   },
