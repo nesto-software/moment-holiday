@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/compare/@nesto-software/moment-holiday@1.1.0...@nesto-software/moment-holiday@1.1.1) (2020-05-20)
+
+
+### Bug Fixes
+
+* update node version in all packages ([8a858d3](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/commit/8a858d3))
+
+
+
+
+
 # [1.1.0](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/compare/@nesto-software/moment-holiday@1.0.5...@nesto-software/moment-holiday@1.1.0) (2020-03-24)
 
 
