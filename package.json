@@ -1,5 +1,6 @@
 {
   "name": "@nesto-software/moment-holiday-monorepo",
+  "version": "1.0.0",
   "description": "A Moment.js plugin for handling holidays.",
   "private": true,
   "keywords": [
