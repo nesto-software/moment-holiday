@@ -1,6 +1,6 @@
 {
     "name": "@nesto-software/moment-holiday-austria",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "The austrian locale for moment-holiday.",
     "keywords": [
         "moment",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/sweden/compare/@nesto-software/moment-holiday-sweden@0.1.1...@nesto-software/moment-holiday-sweden@0.1.2) (2020-05-20)
+
+**Note:** Version bump only for package @nesto-software/moment-holiday-sweden
+
+
+
+
+
 ## [0.1.1](https://github.com/nesto-software/moment-holiday/tree/master/packages/locales/sweden/compare/@nesto-software/moment-holiday-sweden@0.1.0...@nesto-software/moment-holiday-sweden@0.1.1) (2020-05-20)
 
 

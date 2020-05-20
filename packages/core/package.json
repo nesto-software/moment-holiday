@@ -1,6 +1,6 @@
 {
     "name": "@nesto-software/moment-holiday-core",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A Moment.js plugin for handling holidays.",
     "keywords": [
         "moment",

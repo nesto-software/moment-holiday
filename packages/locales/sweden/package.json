@@ -1,6 +1,6 @@
 {
   "name": "@nesto-software/moment-holiday-sweden",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The swedish locale for moment-holiday.",
   "keywords": [
     "moment",

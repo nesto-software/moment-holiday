@@ -1,6 +1,6 @@
 {
     "name": "@nesto-software/moment-holiday-database-mongoose",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A mongo database plugin for moment holiday for the mongoose ODM.",
     "keywords": [
         "moment",
