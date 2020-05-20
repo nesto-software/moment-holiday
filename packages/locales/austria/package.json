@@ -19,7 +19,7 @@
     ],
     "sideEffects": false,
     "engines": {
-        "node": ">= 4.x <= 10.x"
+        "node": ">= 4.x"
     },
     "peerDependencies": {
         "moment": ">=2.0.0"
