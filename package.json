@@ -57,7 +57,7 @@
     "typescript": "3.0.1"
   },
   "engines": {
-    "node": ">= 8.x <= 10.x",
+    "node": ">= 8.x",
     "npm": ">= 2.x <= 6.x"
   },
   "scripts": {
