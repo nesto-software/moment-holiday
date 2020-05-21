@@ -22,4 +22,5 @@ export enum HolidayName {
     BUSS_UND_BETTAG = "Buß- und Bettag",
     WELTFRAUENTAG = "Weltfrauentag",
     WELTKINDERTAG = "Weltkindertag",
+    TAG_DER_BEFREIUNG = "Tag der Befreiung",
 }
