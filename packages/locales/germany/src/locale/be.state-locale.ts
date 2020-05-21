@@ -30,6 +30,15 @@ export class BEStateLocale extends AbstractLocale {
                     new TypeTag(TypeTagValue.PUBLIC),
                     new LegislationTag(this.legislation),   // not added to this document yet - pending
                 ],
+            }, {
+                name: HolidayName.TAG_DER_BEFREIUNG,
+                date: NonRecurringDate.forPredicate(8, 4, (year) => {
+                    return year === 2020; // only applies for 8.5.2020
+                }),
+                tags: [
+                    new TypeTag(TypeTagValue.PUBLIC),
+                    new LegislationTag(this.legislation),   // not added to this document yet - pending
+                ],
             },
         ]);
     }
