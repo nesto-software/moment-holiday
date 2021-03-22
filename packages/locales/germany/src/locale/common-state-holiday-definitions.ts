@@ -79,7 +79,6 @@ export const COMMON_STATE_HOLIDAY_DEFINITIONS = (legislation: Legislation): IHol
         name: HolidayName.ERSTER_WEIHNACHTSFEIERTAG,
         date: new RecurringDate(25, 11),
         tags: [
-            new SpecialSurchargeDayTag(),
             new TypeTag(TypeTagValue.PUBLIC),
             new LegislationTag(legislation),
         ],
@@ -88,7 +87,6 @@ export const COMMON_STATE_HOLIDAY_DEFINITIONS = (legislation: Legislation): IHol
         name: HolidayName.ZWEITER_WEIHNACHTSFEIERTAG,
         date: new RecurringDate(26, 11),
         tags: [
-            new SpecialSurchargeDayTag(),
             new TypeTag(TypeTagValue.PUBLIC),
             new LegislationTag(legislation),
         ],
