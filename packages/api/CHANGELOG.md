@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/nesto-software/moment-holiday/tree/master/packages/api/compare/@nesto-software/moment-holiday@1.1.3...@nesto-software/moment-holiday@1.1.4) (2022-11-18)
+
+
+### Bug Fixes
+
+* typo in package.json ([0b14856](https://github.com/nesto-software/moment-holiday/tree/master/packages/api/commit/0b14856))
+
+
+
+
+
 ## [1.1.3](https://github.com/nesto-software/moment-holiday/tree/master/packages/locale-germany/compare/@nesto-software/moment-holiday@1.1.2...@nesto-software/moment-holiday@1.1.3) (2020-05-22)
 
 **Note:** Version bump only for package @nesto-software/moment-holiday
