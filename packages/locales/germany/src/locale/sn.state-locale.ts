@@ -33,15 +33,11 @@ export class SNStateLocale extends AbstractLocale {
             },
             {
                 name: HolidayName.BUSS_UND_BETTAG,
-                date: PeriodicInYearDate.withResolver((year) => {
-                    const date = moment({
-                        day: 23,
-                        month: 10,
-                        year,
-                    });
-
-                    // get the Wednesday before the 23rd November (i.e. the preceding Wednesday)
-                    return date.day(date.day() >= 3 ? 3 : -4);
+                date: PeriodicInYearDate.withResolver((year: number) => {
+                    const christmasDay = moment(new Date(year, 11, 25));
+                    const adjustment = christmasDay.day() == 0 ? -7: 0; // if Christmas is a Sunday, we need to go back one week further
+                    const adventSunday = christmasDay.day(-21 + adjustment);
+                    return adventSunday.subtract(11, "days"); // Buß und Bettag is 11 days before first advent sunday
                 }),
                 tags: [
                     new TypeTag(TypeTagValue.PUBLIC),
