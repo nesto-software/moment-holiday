@@ -17,9 +17,9 @@
         "date-easter": "^0.2.2",
         "mem": "^4.0.0",
         "moment-range": "^4.0.1",
-        "node-redis-pubsub": "^3.0.0",
+        "node-redis-pubsub": "^5.0.0",
         "quick-lru": "^1.1.0",
-        "redis": "^2.8.0"
+        "redis": "^3.1.1"
     },
     "peerDependencies": {
         "moment": ">=2.0.0",
