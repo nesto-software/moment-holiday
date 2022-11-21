@@ -14,10 +14,10 @@
   ],
   "sideEffects": false,
   "dependencies": {
-    "@nesto-software/moment-holiday-austria": "file:../locales/austria",
-    "@nesto-software/moment-holiday-core": "file:../core",
-    "@nesto-software/moment-holiday-germany": "file:../locales/germany",
-    "@nesto-software/moment-holiday-sweden": "file:../locales/sweden",
+    "@nesto-software/moment-holiday-austria": "^1.0.3",
+    "@nesto-software/moment-holiday-core": "^1.0.3",
+    "@nesto-software/moment-holiday-germany": "^1.0.13",
+    "@nesto-software/moment-holiday-sweden": "^0.1.2",
     "mem": "^4.0.0",
     "moment-range": "^4.0.1"
   },
@@ -61,5 +61,6 @@
     "snyk:protect": "snyk protect",
     "snyk:test": "snyk test"
   },
-  "repository": "https://github.com/nesto-software/moment-holiday/tree/master/packages/api"
+  "repository": "https://github.com/nesto-software/moment-holiday/tree/master/packages/api",
+  "gitHead": "1d7c728fd4cd3de2c2e240467e796f1db2a4fc4a"
 }
