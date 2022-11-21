@@ -1,6 +1,6 @@
 {
     "name": "@nesto-software/moment-holiday-germany",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "The german locale for moment-holiday.",
     "keywords": [
         "moment",
