@@ -3,6 +3,7 @@ import {
     IHolidayDefinitionInternal,
     Legislation,
     LegislationTag,
+    NonRecurringDate,
     RecurringDate,
     TypeTag,
     TypeTagValue,
@@ -24,6 +25,16 @@ export class MVStateLocale extends AbstractLocale {
             {
                 name: HolidayName.REFORMATIONSTAG,
                 date: new RecurringDate(31, 9),
+                tags: [
+                    new TypeTag(TypeTagValue.PUBLIC),
+                    new LegislationTag(this.legislation),
+                ],
+            },
+            {
+                name: HolidayName.WELTFRAUENTAG,
+                date: NonRecurringDate.forPredicate(8, 2, (year) => {
+                    return year > 2022;
+                }),
                 tags: [
                     new TypeTag(TypeTagValue.PUBLIC),
                     new LegislationTag(this.legislation),
