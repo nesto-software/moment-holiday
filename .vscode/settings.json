@@ -3,7 +3,6 @@
   "editor.formatOnSave": false,
   "editor.formatOnType": true,
   "editor.folding": true,
-  "editor.renderIndentGuides": true,
   "editor.parameterHints": true,
   "workbench.editor.enablePreview": true,
   "editor.wordWrap": "on",
@@ -31,5 +30,6 @@
   "typescript.format.insertSpaceAfterTypeAssertion": true,
   "autoimport.doubleQuotes": true,
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.guides.indentation": true
 }

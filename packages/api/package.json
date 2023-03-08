@@ -14,10 +14,10 @@
   ],
   "sideEffects": false,
   "dependencies": {
-    "@nesto-software/moment-holiday-austria": "^1.0.3",
-    "@nesto-software/moment-holiday-core": "^1.0.3",
-    "@nesto-software/moment-holiday-germany": "^1.0.14",
-    "@nesto-software/moment-holiday-sweden": "^0.1.2",
+    "@nesto-software/moment-holiday-austria": "file:../locales/austria",
+    "@nesto-software/moment-holiday-core": "file:../core",
+    "@nesto-software/moment-holiday-germany": "file:../locales/germany",
+    "@nesto-software/moment-holiday-sweden": "file:../locales/sweden",
     "mem": "^4.0.0",
     "moment-range": "^4.0.1"
   },
